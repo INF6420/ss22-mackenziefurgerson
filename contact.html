@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outing</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Outing</a></h1>
+        <input type="text" placeholder= "Search events"> <p>Try <i>Basketball game</i> or <i>Open mic</i></p>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="saves.html">Saves</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Use javascript as processor to make form functional-->
+        <h1>Get in Touch!</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit" onclick="handleSubmit(event)">
+    </form>
+    <!--Use CSS to split the main body content into two vertical blocks, have contact form in center of page and contact info on right-hand side of page-->
+    <h2>Contact</h2>
+                    <h3>User Support #</h3>
+                        <address>
+                            <p>1-800-Outing</p>
+                        </address>
+                    <h3>Main Office</h3>
+                        <address>
+                            <p>234 Outing Dr. Detroit, MI 48200</p>
+                        </address>
+    <footer>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="saves.html">Saves</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Outing &COPY;</p>
+    </footer>
+    </main>
+</body>
+</html>

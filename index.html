@@ -3,13 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Outing</title>
 </head>
 <body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ld7agSt_04"
-     title="YouTube video player" 
-     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-     picture-in-picture; 
-     web-share" allowfullscreen></iframe>
+    <header>
+        <h1><a href="index.html">Outing</a></h1>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="saves.html">Saves</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Use CSS to make two responsive image with caption galleries-->
+        <input type="text" placeholder= "Search events"> <p>Try <i>Basketball game</i> or <i>Open mic</i></p>
+        <h2>Popular Events Near You</h2>
+        <div id="captioned-gallery">
+            <figure class="slider">
+                <figure>
+                    <img src="images/basketballgame.jpg" alt="two teams playing basketball in a court" width="150" height="150">
+                    <figcaption><h3>Detroit Pistons Basketball Game</h3> <p>Detroit, MI <i>August 30th, 2023</i></p></figcaption>
+                </figure>
+                <!--Use CSS to make "click to see event page" button above Open Mic event-->
+                <h2>Click to see event page!</h2>
+                <figure>
+                    <img src="images/openmic.jpg" alt="a microphone and stand" width="150" height="150">
+                    <figcaption><a href="event.html"><h3>Downtown Cafe Open Mic</h3> <p>Detroit, MI <i>August 22nd, 2023</i></p></a></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/farmersmarket.jpg" alt="people shopping for produce from vegetable stand vendors at a market" width="150" height="150">
+                    <figcaption><h3>Fresh Market Produce Day</h3> <p>Ferndale, MI <i>August 26th, 2023</i></p></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/symphony.jpg" alt="a group of violinists playing together" width="150" height="150">
+                    <figcaption><h3>DSO's Community Concert</h3> <p>Detroit, MI <i>August 31st, 2023</i></p></figcaption>
+                </figure>
+            </figure>
+        </div>
+        <h2>More Events Like DSO's Spring Recital</h2>
+        <div id="captioned gallery">
+            <figure class="slider">
+                <figure>
+                    <img src="images/ballet.jpg" alt="three ballerinas in a group position" width="150" height="150">
+                    <figcaption><h3>Detroit Opera Ballet</h3> <p>Detroit, MI <i>August 29th, 2023</i></p></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/beautybeastmusical.jpg" alt="belle and the beast actors sitting on stairs on a stage reading" width="150" height="150">
+                    <figcaption><h3>Beauty and the Beast Musical</h3> <p>Detroit, MI <i>August 1st-31st, 2023</i></p></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/concert.jpg" alt="a crowd dancing to a band onstage" width="150" height="150">
+                    <figcaption><h3>Cool New Band Concert</h3> <p>Ferndale, MI <i>August 26th, 2023</i></p></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pianorecital.jpg" alt="a pianist performing onstage for an audience" width="150" height="150">
+                    <figcaption><h3>Mr. Piano Player Recital</h3> <p>Detroit, MI <i>August 23rd, 2023</i></p></figcaption>
+                </figure>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="saves.html">Saves</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Outing &COPY;</p>
+    </footer>
 </body>
 </html>
