@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Outing</a></h1>
-        <input type="text" placeholder= "Search events"> <p>Try <i>Basketball game</i> or <i>Open mic</i></p>
+        <h1><a class="outing-title" href="index.html">Outing</a></h1>
+        <form class="search-form">
+            <div class="search-input-container">
+              <input type="text" class="search-input" placeholder="Try 'Basketball game' or 'Open mic'" />
+            </div>
+            <button type="submit" class="search-button">Search</button>
+          </form>
         <nav> 
             <ul>
                 <li><a href="index.html">Search</a></li>
@@ -19,38 +25,59 @@
         </nav>
     </header>
     <main>
+        <div class="account-container">
+            <div class="account-sidebar">
+                <div class="profinfo">
         <!--Use CSS to make a side navigation menu-->
-            <p>
+           <div class="profinf-text-cont">
+        <p>
                 <img src="images/profilepic.jpg" alt="profile picture silhouette" width="125" height="125" align="left" />
+                <div class="accountprof-text-cont">
                 <h1>Jane Doe</h1>
-            </p>
             <h3>Detroit, MI</h3>
-        
-            <br />
+        </div>
+        </p>
+        </div>
+        </div>
             <nav>
-                <ul>
-                    <li><a href="#pref">Preferences</a></li>
-                    <li><a href="#upev">Upcoming Events</a></li>
-                    <li><a href="#pastev">Past Events</a></li>
-                    <li><a href="#rev">Reviews</a></li>
-                    <li><a href="settings.html">Settings</a></li>
+                <ul class="account-sidenav">
+                    <li class="prefli"><a href="#pref">Preferences</a></li>
+                    <li class="upevli"><a href="#upev">Upcoming Events</a></li>
+                    <li class="pastevli"><a href="#pastev">Past Events</a></li>
+                    <li class="revli"><a href="#rev">Reviews</a></li>
+                    <li class="settingsli"><a href="settings.html">Settings</a></li>
                 </ul>
             </nav>
+        </div>
+        <div class="account-main">
         <!--Use CSS to make blocks for all buttons in the side nav menu expect for 'Settings' and create columns in between each section-->
-                <h1 id="pref">Preferences</h1>
-                    <h2>Locations</h2>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h2>Genres</h2>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h2>Organizers</h2>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <h2>Venues</h2>
-                    <p>Lorem ipsum dolor sit amet</p>
-
+               <div class="account-pref">
+                 <h1 id="pref">Preferences</h1>
+                 <img src="images/plus-button.png" alt="plus sign in a white circle" width="30" height="30" />
+                </div>  
+                <div class="pref-tags-cont">
+                    <div class="vertical-column">
+                    <div class="tag-titles">
+                    <h2 class="loc-title">Locations</h2>
+                    <h2 class="genre-title">Genres</h2>
+                    <h2 class="org-title">Organizers</h2>
+                    <h2 class="ven-title">Venues</h2>
+                </div>
+                </div>
+                <div class="tags">
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                    <p>Lorem ipsum</p>
+                </div>
+                </div>
+                <div class="account-upev">
                 <h1 id="upev">Upcoming Events</h1>
+                <img src="images/plus-button.png" alt="plus sign in a white circle" width="30" height="30" />
+                </div> 
                 <p><img src="images/ballet.jpg" alt="three ballerinas in a group position" width="75" height="75" />
                     <b>Detroit Opera Ballet Detroit, MI </b> <i>August 29th, 2023</i></p>
-                  
+        
                     <h1 id="pastev">Past Events</h1>
                 <p><img src="images/drivein.jpg" alt="four cars infront of a movie screen outside" width="75" height="75" />
                     Summer Drive-In Series: Superhero Movie <b>Dearborn, MI</b> <i>July 17th, 2023</i></p>
@@ -60,6 +87,8 @@
                     <p>Lorem ipsum dolor sit amet</p>
                     <h3>Filmore Theatre</h3>
                     <p>Lorem ipsum dolor sit amet</p>
+         </div>
+     </div>
                 
 </main>
     <div>
@@ -72,7 +101,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p>Outing &COPY;</p>
+        <p class="copy">Outing &COPY;</p>
     </footer>
 </div>
 </body>
