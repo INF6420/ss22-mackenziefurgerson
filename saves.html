@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Outing</a></h1>
-        <input type="text" placeholder= "Search events"> <p>Try <i>Basketball game</i> or <i>Open mic</i></p>
+        <h1><a class="outing-title" href="index.html">Outing</a></h1>
+        <form class="search-form">
+            <div class="search-input-container">
+              <input type="text" class="search-input" placeholder="Try 'Basketball game' or 'Open mic'" />
+            </div>
+            <button type="submit" class="search-button">Search</button>
+          </form>
         <nav> 
             <ul>
                 <li><a href="index.html">Search</a></li>
@@ -20,27 +26,48 @@
     </header>
     <main>
  <body>
+    <h3 class="saves-h3">Saves</h3>
     <!--Use CSS to divide main content into three vertical columns-->
+    <div class="saves-container">
+        <div class="saves-col">
         <h2>Events</h2>
-        <p><img src="images/openmic.jpg" alt="a microphone and stand" width="75" height="75" />
-            Downtown Cafe Open Mic <b>Detroit, MI</b> <i>August 29th, 2023</i></p>
+        <div class="saves-col1">
+        <p><img src="images/openmic.jpg" alt="a microphone and stand" width="100" height="100" align="left"/>
+            Downtown Cafe Open Mic<br><b>Detroit, MI</b> <br> <i>August 29th, 2023</i></p>
             <br  />  
-            <p><img src="images/ballet.jpg" alt="three ballerinas in a group position" width="75" height="75" />
-                Detroit Opera Ballet <b>Detroit, MI </b> <i>August 29th, 2023</i></p>
-                    <br  />  
+        </div>
+        <div class="saves-col1">
+            <p><img src="images/ballet.jpg" alt="three ballerinas in a group position" width="100" height="100" align="left"/>
+                Detroit Opera Ballet<br><b>Detroit, MI </b> <br> <i>August 29th, 2023</i></p>
+                    <br  />
+                </div>
+        </div>  
+        <div class="saves-col">
         <h2>Organizers</h2>
-        <p><img src="images/DSO.jpg" alt="auditorium with audience watching a symphony orchestra " width="75" height="75" />
-        Detroit Symphony Orchestra <b>Detroit, MI </b></p>
+        <div class="saves-col2">
+        <p><img src="images/DSO.jpg" alt="auditorium with audience watching a symphony orchestra" width="100" height="100" align="left"/>
+        Detroit Symphony Orchestra<br><b>Detroit, MI </b></p>
             <br>
-            <p><img src="images/thriffleamarket.jpg" alt="wooden sign that says 'Second Hand'" width="75" height="75" />
-                Second Hand Flea <b>Royal Oak, MI </b></p>
-                    <br  />  
+        </div>
+        <div class="saves-col2">
+            <p><img src="images/thriffleamarket.jpg" alt="wooden sign that says 'Second Hand'" width="100" height="100" align="left"/>
+                Second Hand Flea<br><b>Royal Oak, MI </b></p>
+                    <br  />
+                </div>
+         </div>  
+         <div class="saves-col"> 
         <h2>Venues</h2>
-        <p><img src="images/auditorium.jpg" alt="a grand stage and balcony seats of an auditorium" width="75" height="75" />
-            Fisher Theatre <b>Detroit, MI </b></p>
-        <p><img src="images/barstage.jpg" alt="band playing on a small stage" width="75" height="75" />
-            Tin Can Bar and Restaurant <b>Hazel Park, MI </b></p>
-    </body>
+        <div class="saves-col3">
+        <p><img src="images/auditorium.jpg" alt="a grand stage and balcony seats of an auditorium" width="100" height="100" align="left"/>
+            Fisher Theatre<br><b>Detroit, MI </b></p>
+        </div>
+        <div class="saves-col3">
+        <p><img src="images/barstage.jpg" alt="band playing on a small stage" width="100" height="100" align="left"/>
+            Tin Can Bar and Restaurant<br><b>Hazel Park, MI </b></p>
+        </div>
+        </div>
+    </div>
+</body>
 </main>
 <footer>
     <nav> 
@@ -51,7 +78,7 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <p>Outing &COPY;</p>
+    <p class="copy">Outing &COPY;</p>
 </footer>
 </body>
 </html>

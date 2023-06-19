@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Outing</a></h1>
+        <h1><a class="outing-title" href="index.html">Outing</a></h1>
         <nav> 
-            <ul>
+            <ul class=>
                 <li><a href="index.html">Search</a></li>
                 <li><a href="saves.html">Saves</a></li>
                 <li><a href="account.html">Account</a></li>
@@ -18,17 +19,18 @@
         </nav>
     </header>
     <main>
-        <!--Use CSS to make two responsive image with caption galleries-->
-        <input type="text" placeholder= "Search events"> <p>Try <i>Basketball game</i> or <i>Open mic</i></p>
+        <form class="index-search-form">
+            <div class="index-search-input-container">
+              <input type="text" class="search-input" placeholder="Try 'Basketball game' or 'Open mic'" />
+            </div>
+            <button type="submit" class="search-button">Search</button>
+          </form>
         <h2>Popular Events Near You</h2>
-        <div id="captioned-gallery">
-            <figure class="slider">
+        <div class="image-container">
                 <figure>
                     <img src="images/basketballgame.jpg" alt="two teams playing basketball in a court" width="150" height="150">
-                    <figcaption><h3>Detroit Pistons Basketball Game</h3> <p>Detroit, MI <i>August 30th, 2023</i></p></figcaption>
+                    <figcaption><h3>Pistons Basketball Game</h3> <p>Detroit, MI <i>August 30th, 2023</i></p></figcaption>
                 </figure>
-                <!--Use CSS to make "click to see event page" button above Open Mic event-->
-                <h2>Click to see event page!</h2>
                 <figure>
                     <img src="images/openmic.jpg" alt="a microphone and stand" width="150" height="150">
                     <figcaption><a href="event.html"><h3>Downtown Cafe Open Mic</h3> <p>Detroit, MI <i>August 22nd, 2023</i></p></a></figcaption>
@@ -41,18 +43,22 @@
                     <img src="images/symphony.jpg" alt="a group of violinists playing together" width="150" height="150">
                     <figcaption><h3>DSO's Community Concert</h3> <p>Detroit, MI <i>August 31st, 2023</i></p></figcaption>
                 </figure>
-            </figure>
-        </div>
+        </div>        
+        <div class="button-container">
+            <a href="#" class="button">
+              Click to see event page!
+              <span class="arrow">&#9650;</span>
+            </a>
+          </div>  
         <h2>More Events Like DSO's Spring Recital</h2>
-        <div id="captioned gallery">
-            <figure class="slider">
+        <div class="image-container">
                 <figure>
                     <img src="images/ballet.jpg" alt="three ballerinas in a group position" width="150" height="150">
                     <figcaption><h3>Detroit Opera Ballet</h3> <p>Detroit, MI <i>August 29th, 2023</i></p></figcaption>
                 </figure>
                 <figure>
                     <img src="images/beautybeastmusical.jpg" alt="belle and the beast actors sitting on stairs on a stage reading" width="150" height="150">
-                    <figcaption><h3>Beauty and the Beast Musical</h3> <p>Detroit, MI <i>August 1st-31st, 2023</i></p></figcaption>
+                    <figcaption><h3>Beauty & the Beast Musical</h3> <p>Detroit, MI <i>August 1st-31st, 2023</i></p></figcaption>
                 </figure>
                 <figure>
                     <img src="images/concert.jpg" alt="a crowd dancing to a band onstage" width="150" height="150">
@@ -62,7 +68,6 @@
                     <img src="images/pianorecital.jpg" alt="a pianist performing onstage for an audience" width="150" height="150">
                     <figcaption><h3>Mr. Piano Player Recital</h3> <p>Detroit, MI <i>August 23rd, 2023</i></p></figcaption>
                 </figure>
-            </figure>
         </div>
     </main>
     <footer>
@@ -74,7 +79,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p>Outing &COPY;</p>
+        <p class="copy">Outing &COPY;</p>
     </footer>
 </body>
 </html>

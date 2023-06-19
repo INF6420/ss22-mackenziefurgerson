@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outing</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Outing</a></h1>
-        <input type="text" placeholder= "Search events"> <p>Try <i>Basketball game</i> or <i>Open mic</i></p>
+        <h1><a class="outing-title" href="index.html">Outing</a></h1>
+        <form class="search-form">
+            <div class="search-input-container">
+              <input type="text" class="search-input" placeholder="Try 'Basketball game' or 'Open mic'" />
+            </div>
+            <button type="submit" class="search-button">Search</button>
+          </form>
         <nav> 
             <ul>
                 <li><a href="index.html">Search</a></li>
@@ -78,7 +84,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <p>Outing &COPY;</p>
+        <p class="copy">Outing &COPY;</p>
     </footer>
 </div>
 </body>
