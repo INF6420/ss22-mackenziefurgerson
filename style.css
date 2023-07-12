@@ -127,6 +127,13 @@ h2{
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%; /* Set the width to 100% to resize the image to fit the container */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+  }
+}
+
 figure {
   text-align: center;
   margin-right: 40px; 
