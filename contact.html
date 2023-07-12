@@ -25,30 +25,30 @@
         </nav>
     </header>
     <main>
-        <!--Use javascript as processor to make form functional-->
-        <h1>Get in Touch!</h1>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-        <input type="submit" value="Submit" onclick="handleSubmit(event)">
-    </form>
-    <!--Use CSS to split the main body content into two vertical blocks, have contact form in center of page and contact info on right-hand side of page-->
-    <h2>Contact</h2>
-                    <h3>User Support #</h3>
+        <div class="contact-main-container">
+        <div class="contact-form">
+        <h1 class="contact-pref">Get in Touch!</h1>
+        <div>
+        <form  action="https://formspree.io/f/mknlnpkr" method="POST" class="validate">
+        <label> <b>Name:</b> <input class="contact-form-input-name" type="name" name="name"> </label>
+        <label> <b>Email:</b> <input required class="contact-form-input-email" type="email" name="email" required> </label>
+        <label> <b>Message:</b> <textarea class="contact-form-input-message"  name="message" required></textarea></label>
+        <button class="contact-form-submit" type="submit">Send</button>
+      </form>
+    </div>
+        </div>
+        <div class="contact-info">
+    <h2 class="contact-tit">Contact</h2>
+                    <h3 class="contact-tit-subinfo">User Support #</h3>
                         <address>
-                            <p>1-800-Outing</p>
+                            <p class="phone-num">1-800-Outing</p>
                         </address>
-                    <h3>Main Office</h3>
+                    <h3 class="contact-tit-subinfo">Main Office</h3>
                         <address>
-                            <p>234 Outing Dr. Detroit, MI 48200</p>
+                            <p class="address">234 Outing Dr. <br> Detroit, MI 48200</p>
                         </address>
+                    </div>
+                </div>
     <footer>
         <nav> 
             <ul>
@@ -61,5 +61,6 @@
         <p class="copy">Outing &COPY;</p>
     </footer>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
