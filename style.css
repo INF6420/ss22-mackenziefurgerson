@@ -495,10 +495,10 @@ padding: 10px;
 background-color: #3c6954;
 color: white;
 border-radius: 4px;
-margin-top: 2%;
-margin-left: 25%;
+margin-top: 5%;
+margin-left: 15%;
 display: flex;
-margin-right: 15%;
+margin-right: 25%;
 justify-content: center;
 }
 .contact-main-container{
@@ -506,13 +506,13 @@ display: flex;
 min-height: 80vh;
 }
 
-.contact-form {
+.contact-form{
 width: 60%;
 }
 
 .contact-info{
-margin-top: 5%;
-margin-left: 10%;
+margin-top: 15%;
+margin-left: 15%;
 }
 
 .contact-tit {
@@ -543,3 +543,74 @@ margin-left: 5%;
 margin-top: 5%;
 margin-left: 5%;
 }
+
+label {
+  display: block;
+}
+
+.validate {
+margin-left: 50%;
+margin-right: 10%;
+margin-top: 6%;
+}
+
+.contact-form-input-name {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  width: 75%;
+  border-radius: 4px;
+  margin-bottom: 5%;
+  border: solid #cfcfcf 2px;
+}
+
+.contact-form-input-email {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  width: 75%;
+  border-radius: 4px;
+  margin-bottom: 5%;
+  border: solid #cfcfcf 2px;
+}
+
+.contact-form-input-message {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 125%;
+  padding: 10px;
+  height: 150px;
+  resize: vertical;
+  border-radius: 4px;
+  margin-bottom: 3%;
+  border: solid #cfcfcf 2px;
+}
+
+.error-message {
+  margin: -.5em 0 1em;
+  color: red;
+}
+
+.contact-form-input:focus {
+  outline: none;
+  border: 2px solid #095326;
+  border: #000 2px solid;
+}
+
+.contact-form-submit {
+  background: #61A687;
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: .5em;
+  border: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact-form-submit:hover,
+.contact-form-submit:focus {
+  background: #095326;
+  color: white;
+}
+
