@@ -67,6 +67,34 @@ footer {
   margin-top: auto;
 }
 
+@media (max-width: 768px) {
+  .index-search-input {
+    width: 100%;
+  }
+  
+  .image-container {
+    flex-wrap: wrap;
+  }
+  
+  figure {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .index-search-input {
+    width: 75%;
+  }
+}
+
+/* Responsive styles for large devices (e.g., laptops and desktops) */
+@media (min-width: 1025px) {
+  .index-search-input {
+    width: 600px;
+  }
+}
+
 .copy {
   text-align: end;
 }
@@ -174,6 +202,14 @@ main {
 footer {
   margin-top: auto;
   margin-bottom: 0%;
+}
+
+@media (max-width: 768px) {
+  .saves-container {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .saves-container {
